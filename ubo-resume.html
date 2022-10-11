@@ -17,19 +17,19 @@
  
 </head>
 <body>
-    <div id="wrapper">
+    <div id="wrapper" itemscope itemtype="http://schema.org/Person">
         <header>
           <div class="container">
             <div class="info">
-            <h1>ZOUGGARH Zakariae</h1>
-            <h2>Data Scientist</h2>
-            <p> <i class="fa fa-location-arrow"></i> Adresse : 4 Rue des Archive, 29200 Brest France </p>
-            <p> <i class="fa fa-calendar"></i> Age : 21ans </p>
-            <p> <i class="fa fa-envelope"></i> Email : zakariae.zouggarh@gmail.com</p>
-            <p> <i class="fa fa-globe"></i> Nationalité : Marocaine</p>
+            <h1 itemprop="name">ZOUGGARH Zakariae</h1>
+            <h2 itemprop="jobTitle">Data Scientist</h2>
+            <p itemprop="address"> <i class="fa fa-location-arrow"></i> Adresse : 4 Rue des Archive, 29200 Brest France </p>
+            <p itemprop="birthDate"> <i class="fa fa-calendar"></i> Date de naissance : 13/01/2001 </p>
+            <p itemprop="email"> <i class="fa fa-envelope"></i> Email : zakariae.zouggarh@gmail.com</p>
+            <p itemprop="nationality"> <i class="fa fa-globe"></i> Nationalité : Marocaine</p>
           </div>
           <div class="info" style="float: right;">
-            <img src="me.jpg">
+            <img itemprop="image" src="me.jpg">
           </div>
         </div>
         </header>
@@ -46,47 +46,47 @@
             <legend><h2>Experiences Professionnelles</h2></legend>
 
             <div>
-                <h3>Siège REDAL, groupe VEOLIA</h3>
-                <p class="uppercase">STAGE DÉVELOPPEUR</p>
+                <h3 itemprop="worksFor">Siège REDAL, groupe VEOLIA</h3>
+                <p itemprop="jobTitle" class="uppercase">STAGE DÉVELOPPEUR</p>
                 <p>Juillet 2021 ‐ Aout 2021 (2 mois)</p>
               </div>
       
               <div>
                 <p>Travaux réalisés:</p>
                 <ul>
-                  <li>Mise en place d’une plateforme de travail Open‐Source, conviviale et visuelle pour gérer les projets et actions, avec différents profils avec une interface collaborative pour signaler les anomalies.</li>
+                  <li itemprop="job-description">Mise en place d’une plateforme de travail Open‐Source, conviviale et visuelle pour gérer les projets et actions, avec différents profils avec une interface collaborative pour signaler les anomalies.</li>
                 </ul>
                 </p>
               </div>
 
             <!-- Job 1 Details -->
         <div>
-            <h3>Ecole Supérieure de Technologie de Salé</h3>
-            <p class="uppercase">Stage de fin d'étude ‐ SFE</p>
-            <p>Avril 2020 - Juin 2020 (3mois)</p>
+            <h3 itemprop="worksFor">Ecole Supérieure de Technologie de Salé</h3>
+            <p itemprop="jobTitle" class="uppercase">Stage de fin d'étude ‐ SFE</p>
+            <p itemprop="job-">Avril 2020 - Juin 2020 (3mois)</p>
           </div>
   
           <div>
             <p>Travaux réalisés:</p>
             <ul>
-              <li>Implementation d’une application web de E‑reputation pour la notation des établissement privées au Maroc.</li>
-              <li>Le scraping et l’analyse des données des établissements et les intégreés dans la base de donnée.</li>
-              <li>La mise en oeuvre des statistiques sur chaque établissement.</li>
+              <li itemprop="job-description">Implementation d’une application web de E‑reputation pour la notation des établissement privées au Maroc.</li>
+              <li itemprop="job-description">Le scraping et l’analyse des données des établissements et les intégreés dans la base de donnée.</li>
+              <li itemprop="job-description">La mise en oeuvre des statistiques sur chaque établissement.</li>
             </ul>
             </p>
           </div>
   
           <!-- Job 2 Details -->
           <div>
-            <h3>Ministère de la santé ‑ Division informatique à Rabat</h3>
-            <p class="uppercase">Stage d'initiation</p>
+            <h3 itemprop="worksFor">Ministère de la santé ‑ Division informatique à Rabat</h3>
+            <p itemprop="jobTitle" class="uppercase">Stage d'initiation</p>
             <p>Juin 2019 (1 mois)</p>
           </div>
           <div>
             <p>Travaux réalisés:</p>
             <ul>
-                <li>La création d’un formulaire médicale de santé familiale pour améliorer le fonctionnement des centres de santé et faciliter l’accés au informations des patients.</li>
-                <li>Decouvrir les composants et les applications du prologiciel ODOO.</li>
+                <li itemprop="job-description">La création d’un formulaire médicale de santé familiale pour améliorer le fonctionnement des centres de santé et faciliter l’accés au informations des patients.</li>
+                <li itemprop="job-description">Decouvrir les composants et les applications du prologiciel ODOO.</li>
             </ul>
           </div>
   
@@ -97,17 +97,17 @@
         <fieldset>
         <legend><h2>Diplômes et Formations</h2></legend>
         <h3>Cycle d’Ingénieur en Data Science et Intelligence Artificielle</h3>
-        <p>ECOLE NATIONALE SUPÉRIEURE D’ARTS ET MÉTIERS DE RABAT ‑ ENSAM</p>
+        <p itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">ECOLE NATIONALE SUPÉRIEURE D’ARTS ET MÉTIERS DE RABAT ‑ ENSAM</p>
         <p>1ère année en cycle d’Ingénieur en Data Science et Intelligence Artificielle.</p>
         <strong>2020 - présent</strong>
         <hr>
         <h3>Diplôme Universitaire de Technologie en Génie Logiciel (DUT) </h3>
-        <p>ECOLE SUPÉRIEURE DE TECHNOLOGiE DE SALÉ ‑ ESTS</p>
+        <p itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">ECOLE SUPÉRIEURE DE TECHNOLOGiE DE SALÉ ‑ ESTS</p>
         <p>Projet de fin d’étude : La mise en oeuvre d’un système de e‑reputation pour evaluer et noter les médecins et les services des centres hospitaliers au Maroc</p>
         <strong>2018 - 2020</strong>
         <hr>
         <h3>Baccalauréat Sciences physique Chimie </h3>
-        <p>LYCÉE QUALIFIANT YOUSSEF BEN TACHFINE À AGADIR</p>
+        <p itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">LYCÉE QUALIFIANT YOUSSEF BEN TACHFINE À AGADIR</p>
         <p>Baccalauréat Internationale option Français.</p>
         <strong>2017 - 2018</strong>
         </fieldset>
@@ -121,32 +121,32 @@
                 <h3>Data Science :</h3>
               </div>
               <div class="col-wide job-description">
-                <p>Machine Learning(Supérvisé, Non supérvisé), Deep Learning, Business Intelligence, Data Warehouse</p>
+                <p class="skill">Machine Learning(Supérvisé, Non supérvisé), Deep Learning, Business Intelligence, Data Warehouse</p>
               </div>
 
                <div class="col-narrow">
                  <h3 >programmation :</h3>
                </div>
                <div class="col-wide job-description">
-                 <p>Python, R, JAVA, C/C++</p>
+                 <p class="skill">Python, R, JAVA, C/C++</p>
                </div>
                <div>
                  <h3 class="col-narrow">Développement web :</h3>
                </div>
                <div class="col-wide job-description">
-                 <p>HTML5, CSS, PHP, JavaScript, J2EE, Symfony, SpringBoot.</p>
+                 <p class="skill">HTML5, CSS, PHP, JavaScript, J2EE, Symfony, SpringBoot.</p>
                </div>
                <div>
                  <h3 class="col-narrow">Base de Donnée : </h3>
                </div>
                <div class="col-wide job-description">
-                 <p>MySQL, PL/SQL, Oracle, PostgreSQL, Access</p>
+                 <p class="skill">MySQL, PL/SQL, Oracle, PostgreSQL, Access</p>
                </div>
                <div>
                  <h3 class="col-narrow">Génie Logiciel :</h3>
                </div>
                <div class="col-wide job-description">
-                 <p>Merise, UML, SCRUM, DevOps, Design Patterns</p>
+                 <p class="skill">Merise, UML, SCRUM, DevOps, Design Patterns</p>
                  
                </div>
 
@@ -154,7 +154,7 @@
                 <h3 class="col-narrow">Service Web :</h3>
               </div>
               <div class="col-wide job-description">
-                <p>SOAP, REST</p>
+                <p class="skill"> SOAP, REST</p>
                 
               </div>
 
@@ -162,7 +162,7 @@
                 <h3 class="col-narrow">Réseaux :</h3>
               </div>
               <div class="col-wide job-description">
-                <p>Configuration des réseaux LAN, Routage Statique et Dynamique(RIPv2, OSPF), Routage Vlan</p>
+                <p class="skill">Configuration des réseaux LAN, Routage Statique et Dynamique(RIPv2, OSPF), Routage Vlan</p>
                 
               </div>
 
@@ -170,7 +170,7 @@
                 <h3 class="col-narrow">Sécurité informatique :</h3>
               </div>
               <div class="col-wide job-description">
-                <p>Sécurité informatique Cryptographie(RSA,RC4,DES), fonction de Hachages, signature numérique, les ACL</p>
+                <p class="skill">Sécurité informatique Cryptographie(RSA,RC4,DES), fonction de Hachages, signature numérique, les ACL</p>
                 
               </div>
 
@@ -178,7 +178,7 @@
                 <h3 class="col-narrow">ERP :</h3>
               </div>
               <div class="col-wide job-description">
-                <p>Prologiciel ODOO</p>
+                <p class="skill">Prologiciel ODOO</p>
                 
               </div>
                </fieldset>
@@ -221,7 +221,7 @@
       </section>
         
         <footer>
-            <p> LinkedIn : https://www.linkedin.com/in/zakariae-zouggarh-3ba9b81a4/</p>
+            <p itemprop="url"> LinkedIn : https://www.linkedin.com/in/zakariae-zouggarh-3ba9b81a4/</p>
         </footer>
     </div>
 </body>
