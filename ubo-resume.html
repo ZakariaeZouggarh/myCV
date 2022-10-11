@@ -9,31 +9,40 @@
     <meta name="author" content="Mon nom">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/resume.css">
-    <!-- [if It IE 9]>
+    <link rel="stylesheet" href="css/responsive.css">
+
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
 </head>
 <body>
     <div id="wrapper">
         <header>
+          <div class="container">
+            <div class="info">
             <h1>ZOUGGARH Zakariae</h1>
             <h2>Data Scientist</h2>
+            <p> <i class="fa fa-location-arrow"></i> Adresse : 4 Rue des Archive, 29200 Brest France </p>
+            <p> <i class="fa fa-calendar"></i> Age : 21ans </p>
+            <p> <i class="fa fa-envelope"></i> Email : zakariae.zouggarh@gmail.com</p>
+            <p> <i class="fa fa-globe"></i> Nationalité : Marocaine</p>
+          </div>
+          <div class="info" style="float: right;">
             <img src="me.jpg">
-            <p>Adresse : 4 Rue des Archive, 29200 Brest France </p>
-            <p>Age : 21ans </p>
-            <p>Email : zakariae.zouggarh@gmail.com</p>
-            <p>Nationalité : Marocaine</p>
-            
-
+          </div>
+        </div>
         </header>
         <section>
-            <h3>Présentation</h3>
+          <fieldset>
+            <legend><h2>Présentation</h2></legend>
             <p>Je suis actuellement étudiant en deuxième année du Master 2 en Developpement Logiciel des Systèmes d’information à l’Univérsité de Bretagne Occidentale à
                 Brest. Je suis une personne profondément motivée, orientée vers les objectifs, travailleuse, créative et curieuse dans l’industrie des technologies de l’information,
                 Je suis passionné par l’apprentissage de nouveaux concepts ainsi que la résolution des differentes problématiques.</p>
+                </fieldset>
         </section>
         <section>
+          <fieldset>
             <legend><h2>Experiences Professionnelles</h2></legend>
 
             <div>
@@ -82,7 +91,7 @@
           </div>
   
           </fieldset>
-        </div>
+       
       </section>
       <section>
         <fieldset>
@@ -108,71 +117,107 @@
       <section>
         <fieldset>
             <legend><h2>Compétences</h2></legend>
-            <div>
+            <div class="col-narrow">
                 <h3>Data Science :</h3>
               </div>
-              <div>
+              <div class="col-wide job-description">
                 <p>Machine Learning(Supérvisé, Non supérvisé), Deep Learning, Business Intelligence, Data Warehouse</p>
               </div>
 
-               <div>
-                 <h3>programmation :</h3>
+               <div class="col-narrow">
+                 <h3 >programmation :</h3>
                </div>
-               <div>
+               <div class="col-wide job-description">
                  <p>Python, R, JAVA, C/C++</p>
                </div>
                <div>
-                 <h3>Développement web :</h3>
+                 <h3 class="col-narrow">Développement web :</h3>
                </div>
-               <div>
+               <div class="col-wide job-description">
                  <p>HTML5, CSS, PHP, JavaScript, J2EE, Symfony, SpringBoot.</p>
                </div>
                <div>
-                 <h3>Base de Donnée : </h3>
+                 <h3 class="col-narrow">Base de Donnée : </h3>
                </div>
-               <div>
+               <div class="col-wide job-description">
                  <p>MySQL, PL/SQL, Oracle, PostgreSQL, Access</p>
                </div>
                <div>
-                 <h3>Génie Logiciel :</h3>
+                 <h3 class="col-narrow">Génie Logiciel :</h3>
                </div>
-               <div>
+               <div class="col-wide job-description">
                  <p>Merise, UML, SCRUM, DevOps, Design Patterns</p>
                  
                </div>
 
                <div>
-                <h3>Service Web :</h3>
+                <h3 class="col-narrow">Service Web :</h3>
               </div>
-              <div>
+              <div class="col-wide job-description">
                 <p>SOAP, REST</p>
                 
               </div>
 
               <div>
-                <h3>Réseaux :</h3>
+                <h3 class="col-narrow">Réseaux :</h3>
               </div>
-              <div>
+              <div class="col-wide job-description">
                 <p>Configuration des réseaux LAN, Routage Statique et Dynamique(RIPv2, OSPF), Routage Vlan</p>
                 
               </div>
 
               <div>
-                <h3>Sécurité informatique :</h3>
+                <h3 class="col-narrow">Sécurité informatique :</h3>
               </div>
-              <div>
+              <div class="col-wide job-description">
                 <p>Sécurité informatique Cryptographie(RSA,RC4,DES), fonction de Hachages, signature numérique, les ACL</p>
                 
               </div>
 
               <div>
-                <h3>ERP :</h3>
+                <h3 class="col-narrow">ERP :</h3>
               </div>
-              <div>
+              <div class="col-wide job-description">
                 <p>Prologiciel ODOO</p>
                 
               </div>
                </fieldset>
+      </section>
+      <section>
+        <div class="content-wrap">
+          <fieldset>
+           <legend><h2>Langues</h2></legend>
+              <div class="col-narrow">
+                <h3>Arabe :</h3>
+              </div>
+              <div class="col-wide job-description">
+                <p>Langue maternelle</p>
+              </div>
+              <div class="col-narrow">
+                <h3>Français :</h3>
+              </div>
+              <div class="col-wide job-description">
+                <p>Bilingue</p>
+              </div>
+              <div class="col-narrow">
+                <h3>Anglais : </h3>
+              </div>
+              <div class="col-wide job-description">
+                <p>Bonne maîtrise</p>
+              </div>
+              </fieldset>
+        </div>
+        <div class="content-wrap">
+          <fieldset style="height: 319px;">
+           <legend><h2>Loisirs</h2></legend>
+              <div class="col-narrow">
+                <h3>Photographie</h3>
+                <h3>Graphic Design</h3>
+                <h3>Sport</h3>
+              </div>
+              
+              </div>
+              </fieldset>
       </section>
         
         <footer>
