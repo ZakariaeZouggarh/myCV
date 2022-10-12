@@ -10,19 +10,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/resume.css">
     <link rel="stylesheet" href="css/responsive.css">
-
+    <link href="https://fonts.googleapis.com/css?family=KoHo|Cormorant:400,700" rel="stylesheet">
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
- 
+    <script src="js/script.js"></script>
+
 </head>
 <body>
     <div id="wrapper" itemscope itemtype="http://schema.org/Person">
         <header>
           <div class="container">
             <div class="info">
-            <h1 itemprop="name">ZOUGGARH Zakariae</h1>
-            <h2 itemprop="jobTitle">Data Scientist</h2>
+            <h1 itemprop="name" class="my_title">ZOUGGARH Zakariae</h1>
+            <h2 itemprop="jobTitle" style="background-color: grey; padding:10px;" class="my_job">Data Scientist</h2>
             <p itemprop="address"> <i class="fa fa-location-arrow"></i> Adresse : 4 Rue des Archive, 29200 Brest France </p>
             <p itemprop="birthDate"> <i class="fa fa-calendar"></i> Date de naissance : 13/01/2001 </p>
             <p itemprop="email"> <i class="fa fa-envelope"></i> Email : zakariae.zouggarh@gmail.com</p>
@@ -46,12 +47,14 @@
             <legend><h2>Experiences Professionnelles</h2></legend>
 
             <div>
-                <h3 itemprop="worksFor">Siège REDAL, groupe VEOLIA</h3>
-                <p itemprop="jobTitle" class="uppercase">STAGE DÉVELOPPEUR</p>
-                <p>Juillet 2021 ‐ Aout 2021 (2 mois)</p>
+                <h3 itemprop="worksFor"><button id="btn1">+</button> Siège REDAL, groupe VEOLIA</h3>
+                
+                
               </div>
       
-              <div>
+              <div  id="job_desc1">
+                <p itemprop="jobTitle" class="uppercase">STAGE DÉVELOPPEUR  </p>
+                <p>Juillet 2021 ‐ Aout 2021 (2 mois)</p>
                 <p>Travaux réalisés:</p>
                 <ul>
                   <li itemprop="job-description">Mise en place d’une plateforme de travail Open‐Source, conviviale et visuelle pour gérer les projets et actions, avec différents profils avec une interface collaborative pour signaler les anomalies.</li>
@@ -61,12 +64,13 @@
 
             <!-- Job 1 Details -->
         <div>
-            <h3 itemprop="worksFor">Ecole Supérieure de Technologie de Salé</h3>
-            <p itemprop="jobTitle" class="uppercase">Stage de fin d'étude ‐ SFE</p>
-            <p itemprop="job-">Avril 2020 - Juin 2020 (3mois)</p>
+            <h3 itemprop="worksFor"><button id="btn2">+</button>Ecole Supérieure de Technologie de Salé</h3>
+            
           </div>
   
-          <div>
+          <div id="job_desc2">
+            <p itemprop="jobTitle" class="uppercase">Stage de fin d'étude ‐ SFE </p>
+            <p itemprop="job-">Avril 2020 - Juin 2020 (3mois)</p>
             <p>Travaux réalisés:</p>
             <ul>
               <li itemprop="job-description">Implementation d’une application web de E‑reputation pour la notation des établissement privées au Maroc.</li>
@@ -78,11 +82,12 @@
   
           <!-- Job 2 Details -->
           <div>
-            <h3 itemprop="worksFor">Ministère de la santé ‑ Division informatique à Rabat</h3>
+            <h3 itemprop="worksFor"><button id="btn3">+</button>Ministère de la santé ‑ Division informatique à Rabat</h3>
+            
+          </div>
+          <div id="job_desc3">
             <p itemprop="jobTitle" class="uppercase">Stage d'initiation</p>
             <p>Juin 2019 (1 mois)</p>
-          </div>
-          <div>
             <p>Travaux réalisés:</p>
             <ul>
                 <li itemprop="job-description">La création d’un formulaire médicale de santé familiale pour améliorer le fonctionnement des centres de santé et faciliter l’accés au informations des patients.</li>
@@ -128,7 +133,8 @@
                  <h3 >programmation :</h3>
                </div>
                <div class="col-wide job-description">
-                 <p class="skill">Python, R, JAVA, C/C++</p>
+                 <p class="skill"> <b data-tooltip-text="Java est un langage de programmation et une plate-forme de calcul lancé par Sun Microsystems en 1995.">
+                  JAVA</b>, Python, C, C++ </p>
                </div>
                <div>
                  <h3 class="col-narrow">Développement web :</h3>
