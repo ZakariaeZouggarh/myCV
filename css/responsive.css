@@ -2,6 +2,12 @@
     .info{
       width: -webkit-fill-available;
     }
+    h2{
+    font-size: 25px;
+    }
+    h1{
+      font-size: 30px;
+    }
 
     #myimage{
       width: 50%;
@@ -32,12 +38,26 @@
     canvas{
       max-width: 300px;
     }
+
+    h2{
+      font-size: 18px;
+      }
+
+    h1{
+      font-size: 30px;
+    }
   }
 
   @media only screen and (max-width: 480px) {
     canvas{
       max-width: 100px;
     }
+    h2{
+      font-size: 15px;
+      }
+      h1{
+        font-size: 30px;
+      }
   }
 @media (min-width: 900px) {
     .col-narrow {
