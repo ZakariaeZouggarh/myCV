@@ -12,6 +12,10 @@
       margin-top: 13px;
       float: none;
     }
+
+    canvas{
+      max-width: 500px;
+    }
   }
 
   @media only screen and (max-width: 570px) {
@@ -25,10 +29,15 @@
       margin-top: 13px;
       float: none;
     }
+    canvas{
+      max-width: 400px;
+    }
   }
 
   @media only screen and (max-width: 480px) {
-    
+    canvas{
+      max-width: 300px;
+    }
   }
 @media (min-width: 900px) {
     .col-narrow {

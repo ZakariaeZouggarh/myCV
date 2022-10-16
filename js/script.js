@@ -331,7 +331,6 @@ window.onload = () => {
       },
       options: {
         legend: {display: false},
-        responsive: true,
         scales: {
           y: {
             beginAtZero: true,

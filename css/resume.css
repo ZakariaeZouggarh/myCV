@@ -194,8 +194,8 @@ span.fa.fa-star {
 }
 
 canvas{
-  width: 100%;
-   /* max-width: 600px;*/
+
+   max-width: 600px;
     margin: 0px auto;
     display: block;
     background-color: #fbfbfb;
