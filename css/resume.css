@@ -11,6 +11,14 @@ html{
     font-family: "Poppins", Helvetica, sans-serif;
 
 }
+#myimage{
+  float: right;
+   width: 28%;
+}
+
+table{
+  width: fit-content;
+}
 
 #wrapper{
     max-width: 900px;
@@ -187,12 +195,13 @@ span.fa.fa-star {
 
 canvas{
   width: 100%;
-    max-width: 600px;
+   /* max-width: 600px;*/
     margin: 0px auto;
     display: block;
     background-color: #fbfbfb;
     padding: 30px;
     border-radius: 14px;
+    
 }
 
 

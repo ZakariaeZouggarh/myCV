@@ -1,19 +1,34 @@
-@media only screen and (max-width: 740px) {
-    #wrapper{
-        background: #777;
+@media only screen and (max-width: 980px) {
+    .info{
+      width: -webkit-fill-available;
+    }
+
+    #myimage{
+      width: 50%;
+      margin: 0 auto;
+      background-color: white;
+      padding: 10px;
+      border-radius: 11px;
+      margin-top: 13px;
+      float: none;
     }
   }
 
   @media only screen and (max-width: 570px) {
-    #wrapper{
-        background: #77f;
+    
+    #myimage{
+      width: 50%;
+      margin: 0 auto;
+      background-color: white;
+      padding: 10px;
+      border-radius: 11px;
+      margin-top: 13px;
+      float: none;
     }
   }
 
   @media only screen and (max-width: 480px) {
-    #wrapper{
-        background: #77f;
-    }
+    
   }
 @media (min-width: 900px) {
     .col-narrow {
