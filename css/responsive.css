@@ -6,7 +6,7 @@
 
   @media only screen and (max-width: 570px) {
     #wrapper{
-        background: #7f7;
+        background: #77f;
     }
   }
 
@@ -21,9 +21,10 @@
       float: left;
     }
     .col-wide {
-      width: 70%;
-      float: left;
-      padding-left: 20px;
+      width: 80%;
+    /* float: right; */
+    /* padding-left: 20px; */
+    margin: 0 auto;
     }
   }
   @media (max-width: 1170px){

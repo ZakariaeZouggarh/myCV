@@ -8,53 +8,65 @@
     <meta name="Keywords" content="wab, developer, resume">
     <meta name="author" content="Mon nom">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="stylesheet" href="css/resume.css">
+    
     <link rel="stylesheet" href="css/responsive.css">
+
     <link href="https://fonts.googleapis.com/css?family=KoHo|Cormorant:400,700" rel="stylesheet">
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/script.js"></script>
 
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
 </head>
 <body>
-
-  <h1>HELLO WORDL</h1>
     <div id="wrapper" itemscope itemtype="http://schema.org/Person">
         <header>
           <div class="container">
             <div class="info">
             <h1 itemprop="name" class="my_title">ZOUGGARH Zakariae</h1>
-            <h2 itemprop="jobTitle" style="background-color: grey; padding:10px;" class="my_job">Data Scientist</h2>
+            <h2 itemprop="jobTitle" class="my_job">Data Scientist</h2>
             <p itemprop="address"> <i class="fa fa-location-arrow"></i> Adresse : 4 Rue des Archive, 29200 Brest France </p>
             <p itemprop="birthDate"> <i class="fa fa-calendar"></i> Date de naissance : 13/01/2001 </p>
             <p itemprop="email"> <i class="fa fa-envelope"></i> Email : zakariae.zouggarh@gmail.com</p>
             <p itemprop="nationality"> <i class="fa fa-globe"></i> Nationalité : Marocaine</p>
           </div>
-          <div class="info" style="float: right;">
+          <div style="float: right; width: 28%;">
             <img itemprop="image" src="me.jpg">
           </div>
         </div>
         </header>
         <section>
           <fieldset>
-            <legend><h2>Présentation</h2></legend>
+            <legend><h2><i class="fa fa-user" aria-hidden="true"></i>
+              <button id="btn0" >+</button>Présentation</h2></legend>
+            <div id="job_desc0" class="h-hide">
             <p>Je suis actuellement étudiant en deuxième année du Master 2 en Developpement Logiciel des Systèmes d’information à l’Univérsité de Bretagne Occidentale à
                 Brest. Je suis une personne profondément motivée, orientée vers les objectifs, travailleuse, créative et curieuse dans l’industrie des technologies de l’information,
                 Je suis passionné par l’apprentissage de nouveaux concepts ainsi que la résolution des differentes problématiques.</p>
+              </div>
                 </fieldset>
+
         </section>
+
+
         <section>
           <fieldset>
-            <legend><h2>Experiences Professionnelles</h2></legend>
-
-            <div>
-                <h3 itemprop="worksFor"><button id="btn1">+</button> Siège REDAL, groupe VEOLIA</h3>
+            <legend><h2><i class="fa fa-tasks" aria-hidden="true"></i>
+              <button id="btn1">+</button>Experiences Professionnelles</h2></legend>
+            <div id="job_desc1"  class="h-hide">
+            
+                <h3 itemprop="worksFor"> Siège REDAL, groupe VEOLIA</h3>
                 
-                
-              </div>
       
-              <div  id="job_desc1">
+              
                 <p itemprop="jobTitle" class="uppercase">STAGE DÉVELOPPEUR  </p>
                 <p>Juillet 2021 ‐ Aout 2021 (2 mois)</p>
                 <p>Travaux réalisés:</p>
@@ -62,15 +74,15 @@
                   <li itemprop="job-description">Mise en place d’une plateforme de travail Open‐Source, conviviale et visuelle pour gérer les projets et actions, avec différents profils avec une interface collaborative pour signaler les anomalies.</li>
                 </ul>
                 </p>
-              </div>
+              
 
             <!-- Job 1 Details -->
-        <div>
-            <h3 itemprop="worksFor"><button id="btn2">+</button>Ecole Supérieure de Technologie de Salé</h3>
+        
+            <h3 itemprop="worksFor">Ecole Supérieure de Technologie de Salé</h3>
             
-          </div>
+          
   
-          <div id="job_desc2">
+          
             <p itemprop="jobTitle" class="uppercase">Stage de fin d'étude ‐ SFE </p>
             <p itemprop="job-">Avril 2020 - Juin 2020 (3mois)</p>
             <p>Travaux réalisés:</p>
@@ -80,14 +92,14 @@
               <li itemprop="job-description">La mise en oeuvre des statistiques sur chaque établissement.</li>
             </ul>
             </p>
-          </div>
+          
   
           <!-- Job 2 Details -->
-          <div>
-            <h3 itemprop="worksFor"><button id="btn3">+</button>Ministère de la santé ‑ Division informatique à Rabat</h3>
+          
+            <h3 itemprop="worksFor">Ministère de la santé ‑ Division informatique à Rabat</h3>
             
-          </div>
-          <div id="job_desc3">
+          
+          
             <p itemprop="jobTitle" class="uppercase">Stage d'initiation</p>
             <p>Juin 2019 (1 mois)</p>
             <p>Travaux réalisés:</p>
@@ -95,14 +107,16 @@
                 <li itemprop="job-description">La création d’un formulaire médicale de santé familiale pour améliorer le fonctionnement des centres de santé et faciliter l’accés au informations des patients.</li>
                 <li itemprop="job-description">Decouvrir les composants et les applications du prologiciel ODOO.</li>
             </ul>
-          </div>
-  
+          
+        </div>
           </fieldset>
        
       </section>
       <section>
         <fieldset>
-        <legend><h2>Diplômes et Formations</h2></legend>
+        <legend><h2><i class="fa fa-university" aria-hidden="true"></i>
+          <button id="btn2" >+</button>Diplômes et Formations</h2></legend>
+        <div id="job_desc2" class="h-hide">
         <h3>Cycle d’Ingénieur en Data Science et Intelligence Artificielle</h3>
         <p itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">ECOLE NATIONALE SUPÉRIEURE D’ARTS ET MÉTIERS DE RABAT ‑ ENSAM</p>
         <p>1ère année en cycle d’Ingénieur en Data Science et Intelligence Artificielle.</p>
@@ -117,44 +131,158 @@
         <p itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">LYCÉE QUALIFIANT YOUSSEF BEN TACHFINE À AGADIR</p>
         <p>Baccalauréat Internationale option Français.</p>
         <strong>2017 - 2018</strong>
+        </div>
         </fieldset>
 
       </section>
 
       <section>
         <fieldset>
-            <legend><h2>Compétences</h2></legend>
+            <legend><h2><i class="fa fa-star" aria-hidden="true"></i>
+              <button id="btn3">+</button>Compétences</h2></legend>
+            <div id="job_desc3" class="h-hide">
+              <form class="rating" method="post">
             <div class="col-narrow">
                 <h3>Data Science :</h3>
               </div>
               <div class="col-wide job-description">
-                <p class="skill">Machine Learning(Supérvisé, Non supérvisé), Deep Learning, Business Intelligence, Data Warehouse</p>
+                <table>
+                  <tr>
+                    <td>Machine Learning</td>
+                    <td id="ML"></td>
+                  </tr>
+                  <tr>
+                    <td>Deep Learning</td>
+                    <td id="DL"></td>
+                  </tr>
+                  <tr>
+                    <td>Business Intelligence</td>
+                    <td id="BI"></td>
+                  </tr>
+                  <tr>
+                    <td>Data Warehouse</td>
+                    <td id="DW"></td>
+                  </tr>
+                </table>
               </div>
 
                <div class="col-narrow">
                  <h3 >programmation :</h3>
                </div>
                <div class="col-wide job-description">
-                 <p class="skill"> <b data-tooltip-text="Java est un langage de programmation et une plate-forme de calcul lancé par Sun Microsystems en 1995.">
-                  JAVA</b>, Python, C, C++ </p>
+               
+                <table>
+                  <tr>
+                    <td class="skill" style="cursor: pointer">
+                      <b>JAVA</b>       -->
+                    <span class="coupontooltip">Java est un langage de programmation et une plate-forme de calcul lancé par Sun Microsystems en 1995.</span>
+                    
+                    </td>
+                    <td id="JAVA"></td>
+                  </tr>
+                  <tr>
+                    <td>Python</td>
+                    <td id="Python"></td>
+                  </tr>
+                  <tr>
+                    <td>C</td>
+                    <td id="C"></td>
+                  </tr>
+                  <tr>
+                    <td>C++</td>
+                    <td id="C++"></td>
+                  </tr>
+                  
+                </table>
                </div>
                <div>
                  <h3 class="col-narrow">Développement web :</h3>
                </div>
                <div class="col-wide job-description">
-                 <p class="skill">HTML5, CSS, PHP, JavaScript, J2EE, Symfony, SpringBoot.</p>
+                <table>
+                  <tr>
+                    <td>HTML</td>
+                    <td id="HTML"></td>
+                  </tr>
+                  <tr>
+                    <td>CSS</td>
+                    <td id="CSS"></td>
+                  </tr>
+                  <tr>
+                    <td>PHP</td>
+                    <td id="PHP"></td>
+                  </tr>
+                  <tr>
+                    <td>JavaScript</td>
+                    <td id="JS"></td>
+                  </tr>
+                  <tr>
+                    <td>J2EE</td>
+                    <td id="J2EE"></td>
+                  </tr>
+                  <tr>
+                    <td>Symfony</td>
+                    <td id="Symfony"></td>
+                  </tr>
+                  <tr>
+                    <td>SpringBoot</td>
+                    <td id="SB"></td>
+                  </tr>
+                </table>
                </div>
                <div>
                  <h3 class="col-narrow">Base de Donnée : </h3>
                </div>
                <div class="col-wide job-description">
-                 <p class="skill">MySQL, PL/SQL, Oracle, PostgreSQL, Access</p>
+                <table>
+                  <tr>
+                    <td>MySQL</td>
+                    <td id="MySQL"></td>
+                  </tr>
+                  <tr>
+                    <td>PL/SQL</td>
+                    <td id="PLSQL"></td>
+                  </tr>
+                  <tr>
+                    <td>Oracle</td>
+                    <td id="Oracle"></td>
+                  </tr>
+                  <tr>
+                    <td>PostgreSQL</td>
+                    <td id="PSQL"></td>
+                  </tr>
+                  <tr>
+                    <td>Access</td>
+                    <td id="Access"></td>
+                  </tr>
+                </table>
                </div>
                <div>
                  <h3 class="col-narrow">Génie Logiciel :</h3>
                </div>
                <div class="col-wide job-description">
-                 <p class="skill">Merise, UML, SCRUM, DevOps, Design Patterns</p>
+                <table>
+                  <tr>
+                    <td>Merise</td>
+                    <td id="Merise"></td>
+                  </tr>
+                  <tr>
+                    <td>UML</td>
+                    <td id="UML"></td>
+                  </tr>
+                  <tr>
+                    <td>SCRUM</td>
+                    <td id="SCRUM"></td>
+                  </tr>
+                  <tr>
+                    <td>DevOps</td>
+                    <td id="DevOps"></td>
+                  </tr>
+                  <tr>
+                    <td>Design Patterns</td>
+                    <td id="DP"></td>
+                  </tr>
+                </table>
                  
                </div>
 
@@ -162,41 +290,45 @@
                 <h3 class="col-narrow">Service Web :</h3>
               </div>
               <div class="col-wide job-description">
-                <p class="skill"> SOAP, REST</p>
-                
-              </div>
-
-              <div>
-                <h3 class="col-narrow">Réseaux :</h3>
-              </div>
-              <div class="col-wide job-description">
-                <p class="skill">Configuration des réseaux LAN, Routage Statique et Dynamique(RIPv2, OSPF), Routage Vlan</p>
-                
-              </div>
-
-              <div>
-                <h3 class="col-narrow">Sécurité informatique :</h3>
-              </div>
-              <div class="col-wide job-description">
-                <p class="skill">Sécurité informatique Cryptographie(RSA,RC4,DES), fonction de Hachages, signature numérique, les ACL</p>
+                <table>
+                  <tr>
+                    <td>SOAP</td>
+                    <td id="SOAP"></td>
+                  </tr>
+                  <tr>
+                    <td>REST</td>
+                    <td id="REST"></td>
+                  </tr>
+                </table>
                 
               </div>
 
               <div>
                 <h3 class="col-narrow">ERP :</h3>
               </div>
-              <div class="col-wide job-description">
-                <p class="skill">Prologiciel ODOO</p>
+              <div class="col-wide job-description" style="margin-bottom : 25px">
+                <table>
+                  <tr>
+                    <td>Prologiciel ODOO</td>
+                    <td id="ODOO"></td>
+                  </tr>
+                </table>
                 
               </div>
+              <canvas id="myChart"></canvas>
+            </div>
+          </form>
+          
                </fieldset>
       </section>
       <section>
         <div class="content-wrap">
           <fieldset>
-           <legend><h2>Langues</h2></legend>
+           <legend><h2><i class="fa fa-language" aria-hidden="true"></i><button id="btn4">+</button>
+            Langues</h2></legend>
+            <div id="job_desc4" class="h-hide">
               <div class="col-narrow">
-                <h3>Arabe :</h3>
+                <h3 id=" ">Arabe :</h3>
               </div>
               <div class="col-wide job-description">
                 <p>Langue maternelle</p>
@@ -213,11 +345,16 @@
               <div class="col-wide job-description">
                 <p>Bonne maîtrise</p>
               </div>
+              </div>
               </fieldset>
         </div>
+
+        
         <div class="content-wrap">
-          <fieldset style="height: 319px;">
-           <legend><h2>Loisirs</h2></legend>
+          <fieldset>
+           <legend><h2><i class="fa fa-paint-brush" aria-hidden="true"></i><button id="btn5">+</button>
+            Loisirs</h2></legend>
+            <div id="job_desc5" class="h-hide">
               <div class="col-narrow">
                 <h3>Photographie</h3>
                 <h3>Graphic Design</h3>
@@ -225,11 +362,13 @@
               </div>
               
               </div>
+            </div>
               </fieldset>
       </section>
         
         <footer>
-            <p itemprop="url"> LinkedIn : https://www.linkedin.com/in/zakariae-zouggarh-3ba9b81a4/</p>
+            <p itemprop="url"> <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn : https://www.linkedin.com/in/zakariae-zouggarh-3ba9b81a4/</p>
+            <p itemprop="url"> <i class="fa fa-github" aria-hidden="true"></i> Github : https://www.linkedin.com/in/zakariae-zouggarh-3ba9b81a4/</p>
         </footer>
     </div>
 </body>
