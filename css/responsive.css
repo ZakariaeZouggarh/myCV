@@ -30,13 +30,13 @@
       float: none;
     }
     canvas{
-      max-width: 400px;
+      max-width: 300px;
     }
   }
 
   @media only screen and (max-width: 480px) {
     canvas{
-      max-width: 300px;
+      max-width: 200px;
     }
   }
 @media (min-width: 900px) {
